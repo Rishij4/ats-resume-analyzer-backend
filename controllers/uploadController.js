@@ -111,11 +111,7 @@ else if (jdFile) {
     let aiData = {};
 
     try {
-      console.log("Resume Extracted:");
-console.log(extractedText);
-
-console.log("Job Description:");
-console.log(jobDescription);
+     
       const prompt = `
 You are an Advanced ATS Resume Analyzer and Technical Recruiter.
 
