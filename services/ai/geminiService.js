@@ -49,8 +49,7 @@ ${prompt}
     let text =
       response.text().trim();
 
-    console.log("RAW GEMINI RESPONSE:");
-    console.log(text);
+    
 
     // remove markdown if Gemini adds it
     text = text
