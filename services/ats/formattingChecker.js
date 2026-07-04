@@ -1,0 +1,1 @@
+// formattingChecker.js
