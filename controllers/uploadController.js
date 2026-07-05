@@ -196,13 +196,27 @@ JS = JavaScript
 Mongo = MongoDB
 Tailwind = Tailwind CSS
 
-ATS SCORE RULES:
+ATS SCORE RULES
 
-90-100 = Excellent Match
-75-89 = Strong Match
-60-74 = Moderate Match
-40-59 = Weak Match
-Below 40 = Poor Match
+Return TWO different values.
+
+1. score
+- Integer from 0 to 100 only.
+- NEVER return text.
+- Examples:
+18
+45
+76
+93
+
+2. scoreLabel
+Return ONE of these values:
+
+Excellent Match
+Strong Match
+Moderate Match
+Weak Match
+Poor Match
 
 matchPercentage formula:
 
@@ -213,6 +227,7 @@ Return EXACTLY this JSON structure:
 {
   "atsAnalysis": {
     "score": 0,
+    "scoreLabel": "",
     "matchPercentage": 0,
     "matchedSkills": [],
     "missingSkills": [],
